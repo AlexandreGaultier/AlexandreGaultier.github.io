@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(217deg, rgb(255, 255, 255), rgba(192, 192, 192, 0) 70.71%),
+    linear-gradient(127deg, rgba(231, 231, 231, 0.945), rgba(230, 230, 230, 0) 70.71%),
+    linear-gradient(336deg, rgba(238, 238, 238, 0.897), rgba(218, 218, 218, 0) 70.71%);
+    font-family: Roboto, sans-serif;
+}
+
+/* HEADER */
+#header{
+    background: linear-gradient(217deg, rgba(121, 117, 68, 0.8), rgba(255,0,0,0) 80.71%),
+    linear-gradient(147deg, rgba(39, 39, 39, 0.9), rgba(0,255,0,0) 50.71%),
+    linear-gradient(336deg, rgba(255,215,0, 0.8), rgba(0,0,255,0) 110.71%);
+    width: 100%;
+    text-align: center;
+    font-size: 1,5vw;
+    padding: 0.5vw 0vw;
+    box-shadow: 0vw 0vw 2vw 0.1vw black;
+}
+
+/* MAIN */
+#main{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title{
+    color: #111111;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#main_zone{
+    /* display flex : mettre les éléments les uns à la suite des autres */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+#zone_text{
+    width: 40vw;
+    margin-left: 10vw;
+}
+
+hr{
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    width: 60vw;
+    height: 0.1vw;
+    background-color: black;
+}
+
+#hr50{
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    width: 35vw;
+    height: 0.1vw;
+    background-color: #006600;
+}
+
+h5{
+    color: #141414;
+    font-size: 1.5vw;
+    font-style: bold;
+}
+
+p{
+    font-size: 1.25vw;
+    text-align: left;
+}
+
+#main_benevolat {
+    width: 60vw;
+    margin: 0vw auto;
+    margin-bottom: 5vw;
+}
+
+/* FOOTER */
+
+#footer{
+    background: linear-gradient(#000000, #1b1b1b, #313131);
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    padding: 0.05vw 0vw;
+    margin-top: 4vw;
+    box-shadow: 0vw 0vw 2vw 0.1vw black;
+}
+
+/* #### Mobile Phones Portrait #### 
+@media screen and (min-device-width: 480px) and (orientation: portrait){
+    #main_zone{
+        /* display flex : mettre les éléments les uns à la suite des autres 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+  }
+  
+  #### Mobile Phones Landscape #### 
+  @media screen and (max-device-width: 640px) and (orientation: landscape){
+   some CSS here
+  }
+  
+#### Mobile Phones Portrait or Landscape ####
+  @media screen and (max-device-width: 640px){
+     some CSS here 
+  }
+  
+ #### iPhone 4+ Portrait or Landscape #### 
+  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+    some CSS here 
+  }
+  */
