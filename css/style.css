@@ -158,7 +158,7 @@ hr {
 	width: 100%;
 	padding: 0;
 	text-align: center;
-	background: url(../img/intro-bg.jpg) no-repeat center bottom;
+	background: url(../img/WP4.jpg) no-repeat center center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -193,7 +193,7 @@ header .intro-text {
 	background: rgb(84,208,221); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to bottom, rgb(221, 42, 42, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5454', endColorstr='#dd5454', GradientType=0 ); /* IE6-9 */
 }
 #about .about-text {
