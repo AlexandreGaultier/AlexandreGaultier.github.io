@@ -6,6 +6,14 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+@keyframes backFadeIn{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+body{
+	transition: opacity .3s;
+	animation: backFadeIn 3s;
+}
 h2 {
 	margin: 0 0 20px 0;
 	font-weight: 400;
