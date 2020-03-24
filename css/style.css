@@ -123,7 +123,7 @@ hr {
 .btn-custom {
 	text-transform: uppercase;
 	color: #414a52;
-	background-color: #dd5454;
+	background-color: #f0f0f0;
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
@@ -133,8 +133,8 @@ hr {
 	transition: all 0.3s;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
-	color: #dd5454;
-	background-color: #414a52;
+	color: #f0f0f0;
+	background-color: #dd5454;
 }
 .btn-default {
 	text-transform: uppercase;
@@ -169,7 +169,7 @@ hr {
 	padding: 10px 0 40px 0;
 }
 .intro h1 {
-	color: rgba(255,255,255,0.9);
+	color: rgba(221, 84, 84, 0.9);
 	font-size: 64px;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -177,7 +177,7 @@ hr {
 	margin-bottom: 20px;
 }
 .intro p {
-	color: rgba(255,255,255,0.8);
+	color: rgba(221, 84, 84, 0.9);
 	font-size: 22px;
 	margin-bottom: 40px;
 	margin-top: 20px;
@@ -190,7 +190,7 @@ header .intro-text {
 #about {
 	padding: 120px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd5454+0,54d0dd+0,54d0dd+0,7fdce6+0,54d0dd+100 */
-	background: rgb(84,208,221); /* Old browsers */
+	background: rgb(221, 84, 84); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgb(221, 42, 42, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
