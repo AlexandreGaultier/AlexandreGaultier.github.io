@@ -350,6 +350,26 @@ ol.type li a:hover {
 	padding: 5px;
 	color: #E87E04;
 }
+/* Compétences Section */
+#competences {
+	padding: 120px 0 60px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd5454+0,54d0dd+0,54d0dd+0,7fdce6+0,54d0dd+100 */
+	background: rgb(84,208,221); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgb(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(230, 127, 127, 1) 0%, rgba(221, 84, 84, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5454', endColorstr='#dd5454', GradientType=0 ); /* IE6-9 */
+}
+/* Expériences Professionnelles Section */
+#exp {
+	padding: 120px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd5454+0,54d0dd+0,54d0dd+0,71777d+0,414a52+100 */
+	background: rgb(84,208,221); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(221, 84, 84, 1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5454', endColorstr='#414a52', GradientType=0 ); /* IE6-9 */
+}
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
