@@ -1,111 +1,370 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    <link rel="icon" type="image/png" href="./img/portfolio/icon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div id="header">
-        <img src="assets/img/portfolio.png" alt="" style="width:30vw;"><br>
-        <a href="https://github.com/AlexandreGaultier?tab=repositories"><img src="assets/img/github.svg.png" alt="" style="width: 4vw;"></a>
-        <a href="https://cvdesignr.com/p/5da6b38d8e59b?hl=fr_FR"><img src="assets/img/cvdesignr.png" alt="" style="width: 4vw;border-radius:2vw;"></a>
-        <a href="https://www.linkedin.com/in/alexandre-gaultier-59a387172/"><img src="assets/img/linkedin.png" alt="" style="width: 4vw;border-radius:2vw;"></a>
-    </div>
-    <div id="main">
-        <button id="transition" onclick="transitionToPage('./new/index.html')">Nouvelle version disponible !</button>
-        <h4 class="title">Qui suis-je ?</h4><hr>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<meta name="description" content="">
+<meta name="author" content="">
 
-        <div id="main_zone">
-            <div id="zone_text">
-                <p>Je m'appelle Alexandre, je suis actuellement en 3ème année de Bachelor Informatique à l'EPSI de Nantes et je vous souhaite la bienvenue sur mon Portfolio !</p>
-                <p>Je suis également développeur C# en contrat de professionnalisation chez EUROVAT.</p>
-                <p>Vous trouverez ci-dessous les projets que j'ai réalisés au cours de mes formations ainsi qu'une vue globale de mes compétences.</p>
-                <p>Autrement, mes passions sont les suivantes : l'audiovisuel, la musique (je joue d'ailleurs de la guitare), les séries, les jeux vidéos et le code bien évidement !</p>
-            </div>
-            <img src="assets/img/Profil2.jpg" alt="" style="height: 25vw; border : solid 0.1vw black; border-radius : 0.8vw; margin-left: 1vw;">
+<!-- Favicons
+    ================================================== -->
+<link rel="icon" type="image/png" href="./img/portfolio/icon.png" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-play fa-rotate-270"></i>Portfolio</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#page-top" class="page-scroll">Accueil</a></li>
+        <li><a href="#about" class="page-scroll">À propos</a></li>
+        <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+        <li><a href="#competences" class="page-scroll">Compétences</a></li>
+        <li><a href="#exp" class="page-scroll">Expériences Professionnelles</a></li>
+        <li><a href="#contact" class="page-scroll">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1>Alexandre Gaultier</h1>
+          <p>Développeur • Concepteur • DevOps</p>
+          <a href="#about" class="btn btn-custom btn-lg page-scroll">À mon propos</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>A propos de moi</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6"> <img src="img/portfolio/Profil2.jpg" class="img-thumbnail" alt="" style="width:20vw;"> </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <p>Etudiant en <b style="color:#e6e6e6;">3ème année de Bachelor Informatique à l'EPSI</b> de Nantes, je suis titulaire de <b style="color:#e6e6e6;">deux BTS SIO (SISR et SLAM)</b> et je suis actuellement <b style="color:#e6e6e6;">développeur C#</b> pour l'entreprise <b style="color:#e6e6e6;">EuroVAT</b> jusqu'à Août 2020.</p>
+          <p>Mes études et mon amour pour le code m'ont poussés à réaliser <b style="color:#e6e6e6;">différents projets</b> afin de monter en compétences dans divers langages. Vous pouvez trouver quelques uns de ces projets ci-dessous, ou bien sur mon <b style="color:#e6e6e6;"><a href="https://github.com/AlexandreGaultier?tab=repositories">GitHub</a></b> !</p>
+          <p>Autrement, je suis passionné <b style="color:#e6e6e6;">d'audiovisuel</b> (montage), de <b style="color:#e6e6e6;">musique</b> (je joue de la guitare), de <b style="color:#e6e6e6;">nouvelles technologies</b> et de <b style="color:#e6e6e6;">skateboard</b>.</p>
+          <p>Enfin, <b style="color:#e6e6e6;">je vous invite à regarder mon CV ou mon profil LinkedIn (liens en bas de la page)</b> afin de consulter <b style="color:#e6e6e6;">mon parcours d'étude et professionnel.</b></p>
+          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Mon Portfolio</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Portfolio</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".symfony">Symfony</a></li>
+            <li><a href="#" data-filter=".python">Python</a></li>
+            <li><a href="#" data-filter=".django">Django</a></li>
+            <li><a href="#" data-filter=".dotnet">ASP.NET</a></li>
+            <li><a href="#" data-filter=".php">Php</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-4 symfony">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/AirAtlantique1.png" title="AirAtlantique" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>AirAtlantique</h4>
+              </div>
+              <img src="img/portfolio/AirAtlantique1.png" class="img-responsive" alt="AirAtlantique"> </a> </div>
+          </div>
         </div>
-
-        <h4 class="title">Expérience Professionnelles</h4><hr>
-            <p style="text-align: center;">Novembre 2019 - Août 2020 : Concepeteur Développeur d'Application en contrat de Professionnalisation.</p>
-            <img src="assets/img/Eurovat.jpg" alt="Euro" style="width: 20vw; margin-bottom: 0.2vw;"><br>
-            <p style="text-align: center;">Janvier 2019 - Février 2019 : Stage de BTS SIO SLAM.</p>
-            <img src="assets/img/Outillage.png" alt="Outillage de l'AirAtlantique" style="width: 20vw; margin-bottom: 0.2vw;"><br>
-            <p style="text-align: center;">Janvier 2018 - Mars 2018 : Stage de BTS SIO SISR.</p>
-            <img src="assets/img/chu.png" alt="CHU d'Angers" style="width: 15vw; margin-bottom: 0.2vw;">
-            <p style="text-align: center;">Mai 2017 - Juin 2017 : Stage de BTS SIO SISR.</p>
-            <img src="assets/img/chu.png" alt="CHU d'Angers" style="width: 15vw; margin-bottom: 0.2vw;">
-
-        <h4 class="title">Mes projets</h4><hr>
-
-            <h5>Shared (Réseau Social en Php) :</h5>
-            <img src="assets/img/Shared.png" alt="réseau social" style="width: 50vw;border:solid 0.05vw black">
-            <h5>Tower Defence (Python) :</h5>
-            <img src="assets/img/tower.png" alt="Tower Defence" style="width: 14vw;">
-            <h5>Why Am I Late ? (ASP.NET) :</h5>
-            <img src="assets/img/WIAL1.png" alt="Why Am I Late ?" style="width: 50vw;border:solid 0.05vw black">
-            <img src="assets/img/WIAL3.png" alt="Why Am I Late ?" style="width: 50vw;border:solid 0.05vw black">
-            <h5>How To Code (Symfony) :</h5>
-            <img src="assets/img/HTC.png" alt="How To Code" style="width: 50vw;border:solid 0.05vw black">
-            <img src="assets/img/HTC2.png" alt="How To Code" style="width: 50vw;border:solid 0.05vw black">
-            <h5>AirAtlantique (Symfony) :</h5>
-            <img src="assets/img/AirAtlantique1.png" alt="AirAtlantique" style="width: 50vw;border:solid 0.05vw black">
-            <img src="assets/img/AirAtlantique2.png" alt="AirAtlantique" style="width: 50vw;border:solid 0.05vw black">
+        <div class="col-sm-6 col-md-3 col-lg-4 symfony">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/AirAtlantique2.png" title="AirAtlantique Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>AirAtlantique</h4>
+              </div>
+              <img src="img/portfolio/AirAtlantique2.png" class="img-responsive" alt="AirAtlantique"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 django">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/Pokedex.png" title="Pokedex API" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Pokedex API</h4>
+              </div>
+              <img src="img/portfolio/Pokedex.png" class="img-responsive" alt="Pokedex API"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 symfony">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/HTC.png" title="How To Code" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>How To Code</h4>
+              </div>
+              <img src="img/portfolio/HTC.png" class="img-responsive" alt="How To Code"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 symfony">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/HTC2.png" title="How To Code" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>How To Code</h4>
+              </div>
+              <img src="img/portfolio/HTC2.png" class="img-responsive" alt="How To Code"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 dotnet">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/WIAL1.png" title="Why I Am Late ?" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Why I Am Late ?</h4>
+              </div>
+              <img src="img/portfolio/WIAL1.png" class="img-responsive" alt="Why I Am Late ?"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 dotnet">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/WIAL2.png" title="Why I Am Late ?" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Why I Am Late ?</h4>
+              </div>
+              <img src="img/portfolio/WIAL2.png" class="img-responsive" alt="Why I Am Late ?"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 php">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/Shared.png" title="Shared" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Shared</h4>
+              </div>
+              <img src="img/portfolio/Shared.png" class="img-responsive" alt="Shared"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 django">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/MHW.png" title="Monster Hunter World API" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Monster Hunter World API</h4>
+              </div>
+              <img src="img/portfolio/MHW.png" class="img-responsive" alt="Monster Hunter World API"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Skills Section -->
+<div id="competences" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Compétences</h2>
+      <hr>
+    </div>
+    <h3><b>Langage de programmation :</b></h3><br>
+        <br><h4>- Côté Front</h4><br>
+            <img src="./img/portfolio/html.png" alt="html" style="width: 8vw; height: 8vw;">
+                <img src="./img/portfolio/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">
+            <img src="./img/portfolio/css.png" alt="Css" style="width: 6vw; height: 8vw;">
+                <img src="./img/portfolio/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">
+            <img src="./img/portfolio/js.png" alt="Js" style="width: 7vw; height: 6.7vw;">
+                <img src="./img/portfolio/ac.png" alt="en cours d'apprentissage" style="width: 1vw; height: 1vw;">
+            <img src="./img/portfolio/vue.png" alt="Vue" style="width: 7vw; height: 6.7vw;">
+                <img src="./img/portfolio/ac.png" alt="en cours d'apprentissage" style="width: 1vw; height: 1vw;">
+        <br><h4>- Côté Back</h4><br>
+            <img src="./img/portfolio/csharp.png" alt="C#" style="width: 8vw; height: 8vw;">
+                <img src="./img/portfolio/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">   
+            <img src="./img/portfolio/php.png" alt="php" style="width: 8vw; height: 8vw;">
+                <img src="./img/portfolio/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">
+            <img src="./img/portfolio/sf.png" alt="Symfony" style="width: 8vw; height: 8vw;">
+                <img src="./img/portfolio/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">  
+            <img src="./img/portfolio/py.png" alt="Python" style="width: 7vw; height: 6.7vw;">
+                <img src="./img/portfolio/ac.png" alt="en cours d'apprentissage" style="width: 1vw; height: 1vw;">
             
-        <h4 class="title">compétences</h4><hr>
+        <br><h4><b>Outils de développement et IDE</b></h4><br>
+            <img src="./img/portfolio/git.png" alt="git"  style="width: 14vw; height: 6vw; margin-right:2vw;">
+            <img src="./img/portfolio/github.svg.png" alt="github" style="width: 7vw; height: 7vw; margin-right:2vw;">
+            <img src="./img/portfolio/vsc.png" alt="VS Code" style="width: 7vw; height: 7vw; margin-right:2vw;">
+            <img src="./img/portfolio/vs.png" alt="VS 2017" style="width: 7vw; height: 7vw; margin-right:2vw;">
+            <img src="./img/portfolio/PyCharm.png" alt="PyCharm" style="width: 7vw; height: 7vw;">
+        <br><h4><b>Base de données :</b></h4><br>
+            <img src="./img/portfolio/MySQL.png" alt="MySQL" style="width: 12vw; height: 8vw; margin-right:5vw;">
+            <img src="./img/portfolio/SQLSERVER.png" alt="SQLSERVER" style="width: 12vw; height: 8vw; margin-left:5vw;">
+        <br><h4><b>Système et administration réseau :</b></h4><br>
+            <img src="./img/portfolio/debian.png" alt="Debian" style="width: 10vw; height: 6vw;">
+            <img src="./img/portfolio/activeDirectory.png" alt="Active_Directory" style="width: 15vw; height: 6vw; margin-left:2vw;">
+            <img src="./img/portfolio/Apache.png" alt="Apache" style="width: 11vw; height: 6vw; margin-left:2vw;">
+            <img src="./img/portfolio/pfs.png" alt="Pfsense" style="width: 13vw; height: 5vw; margin-left:2vw;">
 
-        <h5><b>Langage de programmation :</b></h5>
-        <h5>- Côté Front</h5>
-            <img src="assets/img/html.png" alt="html" style="width: 8vw; height: 8vw;">
-                <img src="assets/img/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">
-            <img src="assets/img/css.png" alt="Css" style="width: 6vw; height: 8vw;">
-                <img src="assets/img/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">
-            <img src="assets/img/js.png" alt="Js" style="width: 7vw; height: 6.7vw;">
-                <img src="assets/img/ac.png" alt="en cours d'apprentissage" style="width: 1vw; height: 1vw;">
-            <img src="assets/img/vue.png" alt="Vue" style="width: 7vw; height: 6.7vw;">
-                <img src="assets/img/ac.png" alt="en cours d'apprentissage" style="width: 1vw; height: 1vw;">
-        <h5>- Côté Back</h5>
-            <img src="assets/img/csharp.png" alt="C#" style="width: 8vw; height: 8vw;">
-                <img src="assets/img/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">   
-            <img src="assets/img/php.png" alt="php" style="width: 8vw; height: 8vw;">
-                <img src="assets/img/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">
-            <img src="assets/img/sf.png" alt="Symfony" style="width: 8vw; height: 8vw;">
-                <img src="assets/img/ac3.png" alt="bien" style="width: 1vw; height: 1vw;">  
-            <img src="assets/img/py.png" alt="Python" style="width: 7vw; height: 6.7vw;">
-                <img src="assets/img/ac.png" alt="en cours d'apprentissage" style="width: 1vw; height: 1vw;">
-            
-        <h5>- Outils de développement et IDE</h5>
-            <img src="assets/img/git.png" alt="git"  style="width: 14vw; height: 6vw; margin-right:2vw;">
-            <img src="assets/img/github.svg.png" alt="github" style="width: 7vw; height: 7vw; margin-right:2vw;">
-            <img src="assets/img/vsc.png" alt="VS Code" style="width: 7vw; height: 7vw; margin-right:2vw;">
-            <img src="assets/img/vs.png" alt="VS 2017" style="width: 7vw; height: 7vw; margin-right:2vw;">
-            <img src="assets/img/PyCharm.png" alt="PyCharm" style="width: 7vw; height: 7vw;">
-        <h5><b>Base de données :</b></h5>
-            <img src="assets/img/MySQL.png" alt="MySQL" style="width: 12vw; height: 8vw; margin-right:5vw;">
-            <img src="assets/img/SQLSERVER.png" alt="SQLSERVER" style="width: 12vw; height: 8vw; margin-left:5vw;">
-        <h5><b>Système et administration réseau :</b></h5>
-            <img src="assets/img/debian.png" alt="Debian" style="width: 10vw; height: 6vw;">
-            <img src="assets/img/activeDirectory.png" alt="Active_Directory" style="width: 15vw; height: 6vw; margin-left:5vw;">
-            <img src="assets/img/Apache.png" alt="Apache" style="width: 11vw; height: 6vw; margin-left:5vw;">
-            <img src="assets/img/pfs.png" alt="Pfsense" style="width: 14vw; height: 6vw; margin-left:5vw;">
+  </div>
+</div>
+<!-- Expériences Professionnelles Section -->
+<div id="exp" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Expériences Professionnelles</h2>
+      <hr>
+    </div>
+    <div class="row" style="color: whitesmoke;">
+      <div class="col-md-6">
+        <img src="./img/portfolio/chu.png" alt="" style="width: 10vw; height: 6vw; align-items: center;">
+      </div>
+      <div class="col-md-6 text-left">
+        <h2 style="color: whitesmoke;">Stage BTS SIO première année</h2>
+        <p>Création de formulaires d'aide à la prescription de médicament.</p>
+        <p>Technologies utilisées : HTML/CSS/Javascript + Bootstrap</p>
+      </div>
+    </div>
+    <hr style="width: 100%; margin: 2vw 0vw;">
+    <div class="row" style="color: whitesmoke;">
+      <div class="col-md-6">
+        <img src="./img/portfolio/chu.png" alt="" style="width: 10vw; height: 6vw; margin: 3vw 0vw;">
+      </div>
+      <div class="col-md-6 text-left">
+        <h2 style="color: whitesmoke;">Stage BTS SIO seconde année (SISR)</h2>
+        <p>Aide aux administrateurs réseaux du CHU d'Angers dans le déploiement et l'automatisation du déploiement de matériel réseau.</p>
+        <p>Technologies utilisées :<br>
+          - OS : Windows, Linux Mint<br>
+          - Logiciels : Cacti, Wireshark<br>
+          - Matériel réseau : Switch Cisco, Baie de Brassage Cisco<br>
+          - Serveur utilisé: Serveur FTP</p>
+      </div>
+    </div>
+    <hr style="width: 100%; margin: 2vw 0vw;">
+    <div class="row" style="color: whitesmoke;">
+      <div class="col-md-6">
+        <img src="./img/portfolio/Outillage.png" alt="" style="width: 15vw; height: 6vw; margin: 3vw 0vw;"><br>
+      </div>
+      <div class="col-md-6 text-left">
+        <h2 style="color: whitesmoke;">Stage BTS SIO seconde année (SLAM)</h2>
+        <p>Développement d'une application cross-plateforme (Android et iOS) en Xamarin répondant au cahier des charges établi au début du stage.</p>
+        <p>Technologies utilisées<br>
+          - Langage : Xamarin Forms<br>
+          - IDE : Visual Studio 2017, Visual Studio for Mac<br>
+          - OS : MacOs, Windows, Android, iOS<br>
+          - APK : Android</p>
+      </div>
+    </div>
+    <hr style="width: 100%; margin: 2vw 0vw;">
+    <div class="row" style="color: whitesmoke;">
+      <div class="col-md-6">
+        <img src="./img/portfolio/Eurovat.jpg" alt="" style="width: 15vw; height: 6vw; margin: 2vw 0vw;"><br>
+      </div>
+      <div class="col-md-6 text-left">
+        <h2 style="color: whitesmoke;">Alternance - Concepteur, Développeur d'Application C#</h2>
+        <p>Développement d'une application cross-plateforme (Android et iOS) en Xamarin répondant au cahier des charges établi au début du stage.</p>
+        <p>Technologies utilisées :
+          - Langage : Xamarin Forms
+          - IDE : Visual Studio 2017, Visual Studio for Mac
+          - OS : MacOs, Windows, Android, iOS
+          - APK : Android</p>
+      </div>
+    </div>
 
-        <h4 class="title">Bénévolat</h4><hr>
-
-            <div id="main_benevolat">
-                <p>L'EpsEvent est un évênement caritatif dont le but est de récolter des fonds pour l'association ELA.</p>
-                <p>J'ai fais partie lors de sa première édition en 2019 de l'organisation de l'évênement, qui à récolter près de 1500 euros pour lutter contre les leucodystrophies.</p>
-                <p>Je serai également l'un des organisateur pour l'édition de cette année.</p>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Me Contacter</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Nom" required="required">
+              <p class="help-block text-danger"></p>
             </div>
-            <img src="assets/img/EpsEvent.PNG" alt="EpsEvent" style="width: 40vw; border: solid 0.05vw black; border-radius: 0.5vw;">
-            <br>
-            <button id="transition" onclick="transitionToPage('./new/index.html')">Une nouvelle version de mon portfolio est disponible, souhaitez vous l'utiliser ?</button>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default btn-lg">Envoyer</button>
+      </form>
+      <div class="social">
+        <ul>
+          <li><a href="https://cvdesignr.com/p/5da6b38d8e59b?hl=fr_FR"><i class="fa fa-file"></i></a></li>
+          <li><a href="https://github.com/AlexandreGaultier?tab=repositories"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/alexandre-gaultier-59a387172/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="../index.html"><i class="fa fa-arrow-circle-left"></i></a></li>
+        </ul>
+      </div>
     </div>
-
-    <div id="footer">
-        <h4>Alexandre Gaultier - Portfolio 2020 ®</h4>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2020 Alexandre Gaultier</p>
     </div>
-  </body>
-  <script src="./assets/js/main.js"></script>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
