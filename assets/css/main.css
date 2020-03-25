@@ -26,21 +26,32 @@ body{
 
 /* MAIN */
 
+@-webkit-keyframes clignote {
+    0%{box-shadow: black 0vw 0vw 0.8vw;}
+    0%{background-color: rgba(219, 186, 0, 0.6);}
+    50%{box-shadow: black 0vw 0vw 0.2vw;}
+    50%{background-color: rgba(219, 186, 0, 0.8);}
+    100%{box-shadow: black 0vw 0vw 0.8vw;}
+    100%{background-color: rgba(219, 186, 0, 0.6);}
+    }
 #transition{
     width: 20vw;
     margin: 0vw auto;
     font-size: 0.8vw;
+    font-weight: 700;
     margin-top: 2vw;
-    padding: 1vw 2vw;
+    padding: 1vw 1vw;
     background-color: rgba(219, 186, 0, 0.6);
     border: none;
     border-radius: 0.8vw;
     box-shadow: black 0vw 0vw 0.5vw;
+    -webkit-animation-name: clignote;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count:infinite;
 } #transition:hover{
-    box-shadow: black 0vw 0vw 0.8vw;
     cursor: pointer;
-    transform: translateY(0.1vw);
-    transition: 0.3s;
+    transform: translateY(0.2vw);
+    transition: 0.9s;
 }
 
 #main{
