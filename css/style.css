@@ -462,6 +462,22 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+
+#btnCV {
+	margin-top: 5vw;
+	padding: 1vw 2vw;
+	background-color: #343b42;
+	border-radius: 0.4vw;
+	transition: 0.5s;
+} #btnCV:hover {
+	font-size: 1.5vw;
+	color: #e5e5e5;
+	padding: 1.5vw 3vw;
+	transform: translateY(5vw);
+	box-shadow: 0 0 0.8vw rgba(0, 0, 0, 0.603);
+	transition: 0.3s;
+}
+
 /* Footer Section*/
 #footer {
 	background: #343b42;
