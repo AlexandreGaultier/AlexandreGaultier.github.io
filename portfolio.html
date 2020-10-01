@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="icon" href="./assets/img/logoooed.png">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body oncontextmenu="return false;">
+    <div id="navbar">
+        <div id="links">
+            <a href="./portfolio.html"><i class="fab fa-atlassian link"></i></a>
+            <a href="./about.html"><i class="fas fa-user link"></i></a>
+            <a href="./skills.html"><i class="fas fa-file link"></i></a>
+            <a href="./projects.html"><i class="fas fa-briefcase link"></i></a>
+            <a href="./contact.html"><i class="fas fa-envelope link"></i></a>
+        </div>
+    </div>
+
+    <div id="logo">
+        <a href="./portfolio.html"><i class="fab fa-atlassian" style="font-size: 2vw;"></i></a>
+    </div>
+
+    <div id="menu">
+        <div class="container" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    </div>
+
+    <div id="names">
+        <div id="name">Alexandre Gaultier</div>
+        <div id="profil">Concepteur Développeur d'Applications</div>
+    </div>
+
+    <div id="medias">
+        <a href="https://github.com/AlexandreGaultier"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alexandre-g-59a387172/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://cvdesignr.com/p/5da6b38d8e59b"><i class="far fa-id-card"></i></a>
+    </div>
+
+    <div id="musics" onclick="toggleMusic()">
+        <i id="music1" class="fas fa-volume-mute music" style="display: inline;"></i>
+        <i id="music2" class="fas fa-volume-down music" style="display: none;"></i>
+        <i id="music3" class="fas fa-volume-up music" style="display: none;"></i>
+    </div>
+
+    <div id="copyright">
+        <div>Alexandre Gaultier © 2020 All rights reserved.</div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
