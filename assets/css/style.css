@@ -129,6 +129,16 @@ i {
     margin-top: 1vw;
 }
 
+/** EasterEgg **/
+#rickRolling {
+    position: absolute;
+    top: 45vh;
+    left: 69vw;
+    background-color: transparent;
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
 /** Medias **/
 
 #medias {
